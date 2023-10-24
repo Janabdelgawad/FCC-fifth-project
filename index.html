@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "UTF-8">
+    <title>Jobs Survey Form</title>
+    <link rel ="stylesheet" href = "styles.css">
+  </head>
+  <body>
+    <h1 id = "title">
+      Jobs Survey Form
+    </h1>
+    <p id = "description">
+      Pick A Tech Role
+    </p>
+    <form id = "survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset id = "fieldset1">
+        <label id = "name-label" for = "name">Name<input 
+          id = "name" 
+          type = "text"
+          placeholder = "Enter your name" 
+          name = "name"
+          required>
+        </label>
+        <label id = "email-label" for = "email">Email<input 
+          id = "email" 
+          type = "email"
+          placeholder = "Enter your Email"
+          name = "email"
+          required>
+        </label>
+        <label id = "number-label" for = "number">Age (optional)<input 
+          id = "number"
+          type ="number"
+          min = "13"
+          max = "120"
+          placeholder = "Enter your Age"
+          name = "number"
+          pattern="[0-100]{1,3}"
+          ></label>
+        <label>Which option best   describes your current role?  
+          <select id = "dropdown" name = "dropdown">
+            <option>Select current role</option>
+            <option>Student</option>
+            <option>Employee</option>
+            <option>other</option>
+          </select>     
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Would you recommend us to a friend ?</legend>
+        <label for = "yes"><input 
+          type = "radio" 
+          name = "choice" 
+          id = "yes"
+          value = "yes">
+          Yes</label>
+        <label for = "maybe"><input 
+          type = "radio" 
+          name = "choice" 
+          id = "maybe"
+          value = "maybe" 
+          checked>Maybe</label>
+        <label for = "no"><input 
+          type = "radio" 
+          name = "choice" 
+          id = "no"
+          value = "no">
+          Not Sure</label>
+      </fieldset>
+      <fieldset id="fieldset-checkbox">
+        <legend>Tech Roles</legend>
+        <label for = "role1"><input id = "role1" type = "checkbox" value = "1">Front-end Developer</label>
+        <label for = "role2"><input id = "role2" type = "checkbox" value = "2">Back-end Developer</label>
+        <label for = "role3"><input id = "role3" type = "checkbox" value = "3">Full-stack Developer</label>
+        <label for = "role4"><input id = "role4" type = "checkbox" value = "4">Data Analyst</label>
+        <label for = "role5"><input id = "role5" type = "checkbox" value = "5">Cybersecurity Analyst</label>
+        <label for = "role6"><input id = "role6" type = "checkbox" value = "6">Database Administrator</label>
+        <label><input type = "checkbox" value = "7">Cloud Architect</label>
+      </fieldset>
+      <fieldset>
+        <label for = "bio">
+          <legend>Why did you choose that role?
+          </legend>
+          <textarea 
+            id="bio" 
+            name="bio" 
+            rows="3" 
+            cols="40" 
+            placeholder = "your reason...">
+          </textarea>
+        </label>
+      </fieldset>
+      <label>
+        <input 
+          type = "submit" 
+          id = "submit">
+      </label>
+    </form>
+  </body>
+</html>
